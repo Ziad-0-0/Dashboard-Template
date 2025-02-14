@@ -104,6 +104,11 @@
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 
+.grid-full {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
 .d-grid-200 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
