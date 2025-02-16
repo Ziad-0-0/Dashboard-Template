@@ -113,7 +113,295 @@
                 </header>
                 <!-- title -->
                 <h2 class="fs-32 fw-700 p-relative">Settings</h2>
-                <div class="settings"></div>
+                <div class="settings d-flex f-direction-column gap-25 p-20">
+                    <div class="card bg-white rad-6 p-20 rad-6">
+                        <div class="card-text">
+                            <h3>Site Control</h3>
+                            <p>Control The Website If There Is Maintenance</p>
+                        </div>
+                        <div class="control">
+                            <label
+                                class="d-flex align-center justify-bettwen mb-30"
+                            >
+                                <div class="text">
+                                    <p class="heading mb-10">Website Control</p>
+                                    <p class="fs-13 c-gray">
+                                        Open/Close Website And Type The Reason
+                                    </p>
+                                </div>
+                                <input
+                                    class="toggle-checkbox"
+                                    type="checkbox"
+                                />
+                                <div class="toggle-switch"></div>
+                            </label>
+                            <textarea
+                                placeholder="Close Message Content"
+                                class="close-message w-full rad-6 p-10"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <div class="card bg-white rad-6 p-20 rad-6">
+                        <div class="card-text">
+                            <h3>General Info</h3>
+                            <p>General Information About Your Account</p>
+                        </div>
+                        <div
+                            class="genral-info d-flex f-direction-column gap-25"
+                        >
+                            <div class="d-flex f-direction-column gap-20">
+                                <label for="first-name" class="c-gray fs-14"
+                                    >First Name</label
+                                >
+                                <input
+                                    type="text"
+                                    name="firstname"
+                                    id="first-name"
+                                    placeholder="First Name"
+                                    class="p-10 rad-6"
+                                />
+                            </div>
+                            <div class="d-flex f-direction-column gap-20">
+                                <label for="last-name" class="c-gray fs-14"
+                                    >Last Name</label
+                                >
+                                <input
+                                    type="text"
+                                    name="lastname"
+                                    id="last-name"
+                                    placeholder="Last Name"
+                                    class="p-10 rad-6"
+                                />
+                            </div>
+                            <div class="d-flex gap-15">
+                                <input
+                                    type="text"
+                                    name=""
+                                    value="o@nn.sa"
+                                    disabled
+                                    class="p-10 rad-6 bg-gray"
+                                />
+                                <button class="change">Change</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-white rad-6 p-20 rad-6">
+                        <div class="card-text">
+                            <h3>Security Info</h3>
+                            <p>Security Information About Your Account</p>
+                        </div>
+                        <div class="security-info">
+                            <div
+                                class="password d-flex align-center justify-bettwen p-y-20"
+                            >
+                                <div class="text">
+                                    <p class="heading mb-10">Password</p>
+                                    <p class="fs-13 c-gray">
+                                        Last Change On 25/10/2021
+                                    </p>
+                                </div>
+                                <button class="pass-btn rad-6">Change</button>
+                            </div>
+                            <label
+                                class="two-factor d-flex align-center justify-bettwen p-y-20"
+                            >
+                                <div class="text">
+                                    <p class="heading mb-10">
+                                        Two-Factor Authentication
+                                    </p>
+                                    <p class="fs-13 c-gray">
+                                        Enable/Disable The Feature
+                                    </p>
+                                </div>
+                                <input
+                                    class="toggle-checkbox"
+                                    type="checkbox"
+                                />
+                                <div class="toggle-switch"></div>
+                            </label>
+                            <div
+                                class="devices d-flex align-center justify-bettwen p-y-20"
+                            >
+                                <div class="text">
+                                    <p class="heading mb-10">Devices</p>
+                                    <p class="fs-13 c-gray">
+                                        Check The Login Devices List
+                                    </p>
+                                </div>
+                                <a href="#" class="p-5 c-black bg-gray rad-6"
+                                    >Devices</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-white rad-6 p-20 rad-6">
+                        <div class="card-text">
+                            <h3>Social Info</h3>
+                            <p>Social Media Information</p>
+                        </div>
+                        <div
+                            class="social-info d-flex f-direction-column gap-25"
+                        >
+                            <div>
+                                <input
+                                    type="text"
+                                    placeholder="Twitter UserName"
+                                />
+                                <div class="icon">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <input
+                                    type="text"
+                                    placeholder="Facebook UserName"
+                                />
+                                <div class="icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <input
+                                    type="text"
+                                    placeholder="Linkedin UserName"
+                                />
+                                <div class="icon">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <input
+                                    type="text"
+                                    placeholder="Youtube UserName"
+                                />
+                                <div class="icon">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-white rad-6 p-20 rad-6">
+                        <div class="card-text">
+                            <h3>Widgets Control</h3>
+                            <p>Show/Hide Widgets</p>
+                        </div>
+                        <div
+                            class="widgets-controls d-flex f-direction-column gap-25"
+                        >
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="quick-draft"
+                                    id="quick-draft"
+                                    checked
+                                />
+                                <label for="quick-draft">Quick Draft</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="yearly-targets"
+                                    id="yearly-targets"
+                                    checked
+                                />
+                                <label for="yearly-targets"
+                                    >Yearly Targets</label
+                                >
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="tickets-statistics"
+                                    id="tickets-statistics"
+                                    checked
+                                />
+                                <label for="tickets-statistics"
+                                    >Tickets Statistics</label
+                                >
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="latest-news"
+                                    id="latest-news"
+                                    checked
+                                />
+                                <label for="latest-news">Latest News</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="latest-tasks"
+                                    id="latest-tasks"
+                                />
+                                <label for="latest-tasks">Latest Tasks</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="top-search"
+                                    id="top-search"
+                                    checked
+                                />
+                                <label for="top-search">Top Search Items</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-white rad-6 p-20 rad-6">
+                        <div class="card-text">
+                            <h3>Backup Manager</h3>
+                            <p>Control Backup Time And Location</p>
+                        </div>
+                        <div
+                            class="backup-manager d-flex f-direction-column gap-25 mb-30"
+                        >
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="time"
+                                    id="daily"
+                                    checked
+                                />
+                                <label for="daily">Daily</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="time" id="weekly" />
+                                <label for="weekly">Weekly</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="time" id="monthly" />
+                                <label for="monthly">Monthly</label>
+                            </div>
+                        </div>
+                        <div class="servers p-y-20 d-flex gap-10 align-center">
+                            <input type="radio" name="server" id="server-one" />
+                            <div
+                                class="server rad-6 p-20 d-flex f-direction-column align-center gap-10"
+                            >
+                                <i class="fa-solid fa-server"></i>
+                                <label for="server-one">Megaman</label>
+                            </div>
+                            <input type="radio" name="server" id="server-two" />
+                            <div
+                                class="server rad-6 p-20 d-flex f-direction-column align-center gap-10"
+                            >
+                                <i class="fa-solid fa-server"></i>
+                                <label for="server-two">Zero</label>
+                            </div>
+                            <input
+                                type="radio"
+                                name="server"
+                                id="server-three"
+                            />
+                            <div
+                                class="server rad-6 p-20 d-flex f-direction-column align-center gap-10"
+                            >
+                                <i class="fa-solid fa-server"></i>
+                                <label for="server-three">Sigma</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
