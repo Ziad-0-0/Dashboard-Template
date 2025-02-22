@@ -982,3 +982,473 @@ table tbody tr:hover {
         width: 100%;
     }
 }
+
+.avatar-box {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-right: 1px solid #ccc;
+}
+
+.profile .card .avatar-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.avatar-box h3 {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.avatar-box p {
+    font-size: 16px;
+    color: var(--grey-color);
+    font-weight: 400;
+}
+
+.avatar-box .level-bar {
+    width: 100%;
+    height: 7px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.avatar-box .level-bar span {
+    width: 80%;
+    height: 100%;
+    background-color: var(--blue-color);
+    display: block;
+    border-radius: 5px;
+}
+
+.avatar-box .stars i {
+    color: var(--yellow-color);
+}
+
+.avatar-box .rates {
+    font-size: 13px;
+    color: var(--grey-color);
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-info .box:nth-child(2) {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-info .box:nth-child(3) {
+    border-bottom: 1px solid #ccc;
+}
+
+.toggle-checkbox-small {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.toggle-switch-small {
+    background-color: #ccc;
+    width: 78px;
+    height: 20px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.toggle-switch-small::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    font-size: 8px;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.toggle-checkbox-small:checked + .toggle-switch-small {
+    background-color: var(--blue-color);
+}
+
+.toggle-checkbox-small:checked + .toggle-switch-small::before {
+    left: 62px;
+    color: var(--blue-color);
+    content: "\f00c";
+}
+
+@media (max-width: 991px) {
+    .options-cont {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .right {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .options-card {
+        flex-direction: column;
+    }
+    .options-cont {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .right {
+        align-items: flex-start;
+    }
+    .avatar-box {
+        border: none;
+    }
+}
+
+.card .skills .skill {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card .skills .skill:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.card .latest-active {
+    flex: 1;
+}
+
+.card .latest-active img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.card .latest-active .box:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 991px) {
+    .card-container {
+        flex-direction: column;
+    }
+}
+
+.projects .card {
+    max-width: 100%;
+}
+
+.projects .card .users img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.projects .card .users img:hover {
+    position: relative;
+}
+
+.projects .card .users img:not(:first-child) {
+    margin-left: -20px;
+}
+
+.projects .card .skills {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
+}
+
+.projects .card .info .progress-bar {
+    width: 260px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 200px;
+}
+
+.projects .card .info .progress-bar div {
+    height: 100%;
+    border-radius: 200px;
+}
+
+.projects .card .info .progress-bar div.in-prog {
+    width: 50%;
+    background-color: var(--red-color);
+}
+
+.projects .card .info .progress-bar div.testing {
+    width: 75%;
+    background-color: var(--green-color);
+}
+
+.projects .card .info .progress-bar div.done {
+    width: 100%;
+    background-color: var(--blue-color);
+}
+
+@media (max-width: 767px) {
+    .projects .card .skills {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .projects .card .skills p {
+        width: fit-content;
+        font-size: 13px;
+    }
+    .projects .card .info {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.courses .box {
+    border-radius: 6px;
+}
+
+.courses .image {
+    height: 280px;
+    position: relative;
+}
+
+.courses .bg-image {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.courses .user-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.courses .discription {
+    line-height: 22px;
+}
+
+.courses .info {
+    border-top: 1px solid #eee;
+    position: relative;
+}
+
+.courses .info::before {
+    content: "Course Info";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    background-color: var(--blue-color);
+    color: white;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.friends {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.friends .contact a i {
+    color: #666;
+}
+
+.friends .contact a:hover {
+    background-color: var(--blue-color);
+}
+
+.friends .contact a:hover i {
+    color: white;
+}
+
+.friends .box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.friends .box .other-info {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.friends .box.vip .other-info::before {
+    content: "VIP";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color: var(--yellow-color);
+    transform: translateY(-50%);
+    font-size: 40px;
+    opacity: 0.2;
+    font-weight: 700;
+}
+
+.files .files-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.files .files-container img {
+    width: 64px;
+    transition: 0.3s;
+}
+
+.files .files-container .box:hover img {
+    transform: rotate(6deg);
+}
+
+.files .files-container .box .date-size {
+    border-top: 1px solid #eee;
+}
+
+.files-statistics {
+    width: 100%;
+    max-width: 300px;
+    height: fit-content;
+}
+
+.files-statistics .file {
+    border: 1px solid #eee;
+}
+
+.files-statistics .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.files-statistics .upload-btn {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.files-statistics .upload-btn:hover i {
+    animation: go-up 0.8s infinite;
+}
+
+.files-statistics .upload-btn i {
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+@keyframes go-up {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    .files {
+        flex-direction: column-reverse;
+    }
+    .files-statistics {
+        max-width: 100%;
+    }
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .plans {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+
+.plans .plan.free .price {
+    border: 3px solid white;
+    outline: 3px solid var(--green-color);
+}
+
+.plans .plan.basic .price {
+    border: 3px solid white;
+    outline: 3px solid var(--blue-color);
+}
+
+.plans .plan.premium .price {
+    border: 3px solid white;
+    outline: 3px solid var(--yellow-color);
+}
+
+.plans .plan .info li {
+    border-bottom: 1px solid #ddd;
+}
+
+.plans .plan .info .fa-info {
+    font-size: 8px;
+    color: white;
+    width: 15px;
+    height: 15px;
+    background-color: var(--grey-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 900;
+}
+
+.plans .plan .join-btn {
+    width: fit-content;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.plans .plan.free .join-btn {
+    background-color: var(--green-color);
+}
+
+.plans .plan.basic .join-btn {
+    background-color: var(--blue-color);
+}
+
+.plans .plan.premium .join-btn {
+    background-color: var(--yellow-color);
+}
